@@ -1,6 +1,7 @@
 import urllib2
 from bs4 import BeautifulSoup as bs
 import pandas as pd
+from datetime import date, timedelta as td
 
 def get_scores(month, day, year):
 	url = 'http://www.sports-reference.com/cbb/boxscores/index.cgi?month='+str(month)+'&day='+str(day)+'&year='+str(year)
@@ -31,8 +32,17 @@ def get_scores(month, day, year):
 		next_entry = []
 		away = game[0]
 		home = game[1]
-		next_entry.append(away[0].encode('utf-8'))
-		next_entry.append('@ '+home[0].encode('utf-8'))
+		away_name = away[0]
+		if away[0][-1] == ')' and away[0][-2].isdigit():
+			t = away[0].find('(')
+			away_name = away[0][:t]
+		home_name = home[0]
+		if home[0][-1] == ')' and home[0][-2].isdigit():
+			t = home[0].find('(')
+			home_name = home[0][:t]
+
+		next_entry.append(away_name.encode('utf-8'))
+		next_entry.append(home_name.encode('utf-8'))
 		if int(away[1]) < int(home[1]):
 			next_entry.append('L')
 			next_entry.append(home[1].encode('utf-8')+'-'+away[1].encode('utf-8'))
@@ -42,7 +52,25 @@ def get_scores(month, day, year):
 		games_csv.append(next_entry)
 
 	df = pd.DataFrame(data=games_csv)
-	df.to_csv('parsed_gamelog.csv', index=False, index_label=False, header = ["Team", "Opponent", "Result", "Score"])
+	if not df.empty:
+		df.to_csv('scores/log'+str(month)+'-'+str(day)+'-'+str(year)+'.csv', index=False, index_label=False, header = ["Team", "Opponent", "Result", "Score"])
 
+tourney_dates = {}
+tourney_dates['2017'] = [date(2017, 3, 14), date(2017, 4, 3)]
+tourney_dates['2016'] = [date(2016, 3, 15), date(2016, 4, 4)]
+tourney_dates['2015'] = [date(2015, 3, 17), date(2015, 4, 6)]
+tourney_dates['2014'] = [date(2014, 3, 18), date(2014, 4, 7)]
+tourney_dates['2013'] = [date(2013, 3, 19), date(2013, 4, 8)]
+tourney_dates['2012'] = [date(2012, 3, 13), date(2012, 4, 2)]
+tourney_dates['2011'] = [date(2011, 3, 15), date(2011, 4, 4)]
+tourney_dates['2010'] = [date(2010, 3, 16), date(2010, 4, 5)]
+tourney_dates['2009'] = [date(2009, 3, 17), date(2009, 4, 6)]
+tourney_dates['2008'] = [date(2008, 3, 18), date(2008, 4, 7)]
 
-get_scores(11, 15, 2016)
+for year in tourney_dates.keys():
+	d0 = tourney_dates[year][0]
+	d1 = tourney_dates[year][1]
+	delta = d1-d0
+	for i in range(delta.days+1):
+		cur = d0+td(days=i)
+		get_scores(cur.month, cur.day, cur.year)
