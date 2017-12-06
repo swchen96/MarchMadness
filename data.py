@@ -5,8 +5,10 @@ from pprint import pprint as pprint
 # data = pd.read_csv('team_stats_16-17.csv')
 # teams = data[['Team name', 'Team ID']]
 # pprint(teams)
+# teams.to_csv('team_stats_11-12.csv')
 
-data = pd.read_csv('team_stats_14-15.csv')
+data = pd.read_csv('team_stats_11-12.csv')
+
 
 new_stats = pd.read_csv('rankings.csv').dropna()#.sort_values('Name').reset_index(drop = 'True')
 #new_stats['Games'] = new_stats['W'] + new_stats['L']
@@ -19,4 +21,4 @@ new_stats.columns = ['Team name', 'Fouls', 'PFPG']
 full_data = data.merge(new_stats, on='Team name', how='left')#, on=)
 pprint(full_data)
 
-full_data.to_csv('team_stats_14-15.csv')
+full_data.to_csv('team_stats_11-12.csv')
