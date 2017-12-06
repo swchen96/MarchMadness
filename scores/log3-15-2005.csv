@@ -1,6 +1,6 @@
-Team,Opponent,Result,Score
-Oakland,Alabama A&M,W,79-69
-DePaul,Missouri,W,75-70
-Holy Cross,Notre Dame,W,78-73
-Miami (FL),South Carolina,L,69-67
-Temple,Virginia Tech,L,60-50
+Team1,Team2,Score1,Score2
+Oakland,Alabama A&M,69,79
+DePaul,Missouri,70,75
+Holy Cross,Notre Dame,73,78
+Miami (FL),South Carolina,69,67
+Temple,Virginia Tech,60,50

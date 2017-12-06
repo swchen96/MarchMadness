@@ -1,6 +1,6 @@
-Team,Opponent,Result,Score
-Memphis,Bradley,W,80-64
-South Carolina,Cincinnati,W,65-62
-LSU,Duke,W,62-54
-UCLA,Gonzaga,W,73-71
-West Virginia,Texas,L,74-71
+Team1,Team2,Score1,Score2
+Memphis,Bradley,64,80
+South Carolina,Cincinnati,62,65
+LSU,Duke,54,62
+UCLA,Gonzaga,71,73
+West Virginia,Texas,74,71

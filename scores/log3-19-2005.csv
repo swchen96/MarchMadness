@@ -1,13 +1,13 @@
-Team,Opponent,Result,Score
-Arizona,Alabama-Birmingham,W,85-63
-Milwaukee,Boston College,W,83-75
-Kentucky,Cincinnati,W,69-60
-Texas A&M,DePaul,W,75-72
-Texas Tech,Gonzaga,W,71-69
-Nevada,Illinois,L,71-59
-Virginia Tech,Memphis,L,83-62
-Davidson,Missouri State,W,82-71
-Utah,Oklahoma,W,67-58
-Washington,Pacific,W,97-79
-Buffalo,St. Joseph's,L,55-50
-Western Kentucky,Wichita State,L,84-81
+Team1,Team2,Score1,Score2
+Arizona,Alabama-Birmingham,63,85
+Milwaukee,Boston College,75,83
+Kentucky,Cincinnati,60,69
+Texas A&M,DePaul,72,75
+Texas Tech,Gonzaga,69,71
+Nevada,Illinois,71,59
+Virginia Tech,Memphis,83,62
+Davidson,Missouri St.,71,82
+Utah,Oklahoma,58,67
+Washington,Pacific,79,97
+Buffalo,St. Joseph's,55,50
+Western Kentucky,Wichita St.,84,81

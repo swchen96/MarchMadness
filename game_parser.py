@@ -40,20 +40,23 @@ def get_scores(month, day, year):
 		if home[0][-1] == ')' and home[0][-2].isdigit():
 			t = home[0].find('(')
 			home_name = home[0][:t-1]
-
+		away_name = away_name.replace('State', 'St.')
+		home_name = home_name.replace('State', 'St.')
 		next_entry.append(away_name.encode('utf-8'))
 		next_entry.append(home_name.encode('utf-8'))
-		if int(away[1]) < int(home[1]):
-			next_entry.append('L')
-			next_entry.append(home[1].encode('utf-8')+'-'+away[1].encode('utf-8'))
-		else:
-			next_entry.append('W')
-			next_entry.append(away[1].encode('utf-8')+'-'+home[1].encode('utf-8'))
+		#if int(away[1]) < int(home[1]):
+		#	next_entry.append('L')
+		#	next_entry.append(home[1].encode('utf-8')+'-'+away[1].encode('utf-8'))
+		#else:
+		#	next_entry.append('W')
+		#	next_entry.append(away[1].encode('utf-8')+'-'+home[1].encode('utf-8'))
+		next_entry.append(home[1].encode('utf-8'))
+		next_entry.append(away[1].encode('utf-8'))
 		games_csv.append(next_entry)
 
 	df = pd.DataFrame(data=games_csv)
 	if not df.empty:
-		df.to_csv('scores/log'+str(month)+'-'+str(day)+'-'+str(year)+'.csv', index=False, index_label=False, header = ["Team", "Opponent", "Result", "Score"])
+		df.to_csv('scores/log'+str(month)+'-'+str(day)+'-'+str(year)+'.csv', index=False, index_label=False, header = ["Team1", "Team2", "Score1", "Score2"])
 
 tourney_dates = {}
 tourney_dates['2017'] = [date(2017, 3, 14), date(2017, 4, 3)]

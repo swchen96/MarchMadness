@@ -1,8 +1,8 @@
-Team,Opponent,Result,Score
-Ohio,Bradley,L,79-73
-Valparaiso,Houston,L,91-67
-Dayton,Illinois State,W,55-48
-University of California,Ohio State,L,73-56
-Utah,Tulsa,L,69-60
-Old Dominion,Virginia,L,80-76
-Alabama-Birmingham,Virginia Tech,L,75-49
+Team1,Team2,Score1,Score2
+Ohio,Bradley,79,73
+Valparaiso,Houston,91,67
+Dayton,Illinois St.,48,55
+University of California,Ohio St.,73,56
+Utah,Tulsa,69,60
+Old Dominion,Virginia,80,76
+Alabama-Birmingham,Virginia Tech,75,49

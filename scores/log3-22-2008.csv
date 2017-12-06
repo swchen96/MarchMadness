@@ -1,9 +1,9 @@
-Team,Opponent,Result,Score
-West Virginia,Duke,W,73-67
-UNLV,Kansas,L,75-56
-Wisconsin,Kansas State,W,72-55
-Akron,UMass,L,68-63
-Pitt,Michigan State,L,65-54
-Washington State,Notre Dame,W,61-41
-Xavier,Purdue,W,85-78
-UCLA,Texas A&M,W,51-49
+Team1,Team2,Score1,Score2
+West Virginia,Duke,67,73
+UNLV,Kansas,75,56
+Wisconsin,Kansas St.,55,72
+Akron,UMass,68,63
+Pitt,Michigan St.,65,54
+Washington St.,Notre Dame,41,61
+Xavier,Purdue,78,85
+UCLA,Texas A&M,49,51

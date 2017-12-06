@@ -1,10 +1,10 @@
-Team,Opponent,Result,Score
-UCLA,Alabama,W,62-59
-Montana,Boston College,L,69-56
-George Washington,Duke,L,74-61
-Milwaukee,Florida,L,82-60
-Indiana,Gonzaga,L,90-80
-Washington,Illinois,W,67-64
-Texas A&M,LSU,L,58-57
-Manhattan,Maryland,W,87-84
-Wichita State,Tennessee,W,80-73
+Team1,Team2,Score1,Score2
+UCLA,Alabama,59,62
+Montana,Boston College,69,56
+George Washington,Duke,74,61
+Milwaukee,Florida,82,60
+Indiana,Gonzaga,90,80
+Washington,Illinois,64,67
+Texas A&M,LSU,58,57
+Manhattan,Maryland,84,87
+Wichita St.,Tennessee,73,80

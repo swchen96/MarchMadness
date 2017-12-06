@@ -1,9 +1,9 @@
-Team,Opponent,Result,Score
-Miami (OH),Butler,L,53-52
-Georgia Southern,Charlotte,L,77-61
-Monmouth,Hampton,W,71-49
-Fairleigh Dickinson,Manhattan,L,80-77
-Delaware State,Northern Arizona,W,58-53
-Rutgers,Penn State,W,76-71
-Virginia,Stanford,L,65-49
-Lipscomb,UTEP,L,85-66
+Team1,Team2,Score1,Score2
+Miami (OH),Butler,53,52
+Georgia Southern,Charlotte,77,61
+Monmouth,Hampton,49,71
+Fairleigh Dickinson,Manhattan,80,77
+Delaware St.,Northern Arizona,53,58
+Rutgers,Penn St.,71,76
+Virginia,Stanford,65,49
+Lipscomb,UTEP,85,66

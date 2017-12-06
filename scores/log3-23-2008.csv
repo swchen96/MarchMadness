@@ -1,8 +1,8 @@
-Team,Opponent,Result,Score
-UNC,Arkansas,W,108-77
-Georgetown,Davidson,L,74-70
-Oklahoma,Louisville,L,78-48
-Mississippi State,Memphis,L,77-74
-Texas,Miami,W,75-72
-Western Kentucky,San Diego,W,72-63
-Villanova,Siena,W,84-72
+Team1,Team2,Score1,Score2
+UNC,Arkansas,77,108
+Georgetown,Davidson,74,70
+Oklahoma,Louisville,78,48
+Mississippi St.,Memphis,77,74
+Texas,Miami,72,75
+Western Kentucky,San Diego,63,72
+Villanova,Siena,72,84

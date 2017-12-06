@@ -1,5 +1,5 @@
-Team,Opponent,Result,Score
-Nebraska,Creighton,W,71-70
-Lehigh,Florida A&M,L,72-57
-Missouri,Michigan,L,65-64
-Iowa,Saint Louis,L,70-69
+Team1,Team2,Score1,Score2
+Nebraska,Creighton,70,71
+Lehigh,Florida A&M,72,57
+Missouri,Michigan,65,64
+Iowa,Saint Louis,70,69

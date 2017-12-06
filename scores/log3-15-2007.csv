@@ -1,19 +1,19 @@
-Team,Opponent,Result,Score
-Georgetown,Belmont,W,80-55
-Texas Tech,Boston College,L,84-75
-Xavier,BYU,W,79-77
-Old Dominion,Butler,L,57-46
-Ohio State,Central Connecticut,W,78-57
-Maryland,Davidson,W,82-70
-VCU,Duke,W,79-77
-UNC,Eastern Kentucky,W,86-65
-Michigan,Florida State,L,87-66
-Vanderbilt,George Washington,W,77-44
-Indiana,Gonzaga,W,70-57
-Stanford,Louisville,L,78-58
-Michigan State,Marquette,W,61-49
-Washington State,Oral Roberts,W,70-54
-Texas A&M,Penn,W,68-52
-Wright State,Pitt,L,79-58
-Weber State,UCLA,L,70-42
-UMass,West Virginia,L,90-77
+Team1,Team2,Score1,Score2
+Georgetown,Belmont,55,80
+Texas Tech,Boston College,84,75
+Xavier,BYU,77,79
+Old Dominion,Butler,57,46
+Ohio St.,Central Connecticut,57,78
+Maryland,Davidson,70,82
+VCU,Duke,77,79
+UNC,Eastern Kentucky,65,86
+Michigan,Florida St.,87,66
+Vanderbilt,George Washington,44,77
+Indiana,Gonzaga,57,70
+Stanford,Louisville,78,58
+Michigan St.,Marquette,49,61
+Washington St.,Oral Roberts,54,70
+Texas A&M,Penn,52,68
+Wright St.,Pitt,79,58
+Weber St.,UCLA,70,42
+UMass,West Virginia,90,77

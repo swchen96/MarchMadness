@@ -1,10 +1,10 @@
-Team,Opponent,Result,Score
-Oakland,Bradley,L,76-75
-Kentucky,Creighton,W,65-63
-James Madison,Liberty,W,88-65
-Belmont,Old Dominion,L,70-62
-Idaho,Pacific,L,69-59
-College of Charleston,Richmond,L,74-72
-Davidson,Saint Mary's (CA),L,80-68
-Wichita State,Stanford,L,70-56
-Northeastern,UTEP,L,75-66
+Team1,Team2,Score1,Score2
+Oakland,Bradley,76,75
+Kentucky,Creighton,63,65
+James Madison,Liberty,65,88
+Belmont,Old Dominion,70,62
+Idaho,Pacific,69,59
+College of Charleston,Richmond,74,72
+Davidson,Saint Mary's (CA),80,68
+Wichita St.,Stanford,70,56
+Northeastern,UTEP,75,66

@@ -1,9 +1,9 @@
-Team,Opponent,Result,Score
-Austin Peay,Air Force,L,75-51
-ETSU,Clemson,L,64-57
-Hofstra,DePaul,L,83-71
-Fresno State,Georgia,L,88-78
-Vermont,Kansas State,L,59-57
-Appalachian State,Ole Miss,L,73-59
-San Diego State,Missouri State,W,74-70
-South Alabama,Syracuse,L,79-73
+Team1,Team2,Score1,Score2
+Austin Peay,Air Force,75,51
+ETSU,Clemson,64,57
+Hofstra,DePaul,83,71
+Fresno St.,Georgia,88,78
+Vermont,Kansas St.,59,57
+Appalachian St.,Ole Miss,73,59
+San Diego St.,Missouri St.,70,74
+South Alabama,Syracuse,79,73

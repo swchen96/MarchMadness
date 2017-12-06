@@ -1,5 +1,5 @@
-Team,Opponent,Result,Score
-Dayton,Ohio State,L,74-63
-Houston,Tulsa,L,73-69
-Bradley,Virginia,W,96-85
-Ole Miss,Virginia Tech,W,81-72
+Team1,Team2,Score1,Score2
+Dayton,Ohio St.,74,63
+Houston,Tulsa,73,69
+Bradley,Virginia,85,96
+Ole Miss,Virginia Tech,72,81

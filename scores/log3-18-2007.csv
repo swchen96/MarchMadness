@@ -1,9 +1,9 @@
-Team,Opponent,Result,Score
-Purdue,Florida,L,74-67
-Kentucky,Kansas,L,88-76
-Nevada,Memphis,L,78-62
-Wisconsin,UNLV,L,74-68
-Winthrop,Oregon,L,75-61
-Texas,USC,L,87-68
-Virginia Tech,Southern Illinois,L,63-48
-Virginia,Tennessee,L,77-74
+Team1,Team2,Score1,Score2
+Purdue,Florida,74,67
+Kentucky,Kansas,88,76
+Nevada,Memphis,78,62
+Wisconsin,UNLV,74,68
+Winthrop,Oregon,75,61
+Texas,USC,87,68
+Virginia Tech,Southern Illinois,63,48
+Virginia,Tennessee,77,74

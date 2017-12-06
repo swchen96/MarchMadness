@@ -1,18 +1,18 @@
-Team,Opponent,Result,Score
-Utah,Arizona,L,84-71
-Temple,Arizona State,L,66-57
-Tulsa,Auburn,L,74-55
-USC,Boston College,W,72-55
-Wake Forest,Cleveland State,L,84-69
-Missouri,Cornell,W,78-59
-West Virginia,Dayton,L,68-60
-Pitt,ETSU,W,72-62
-Miami (FL),Florida,L,74-60
-North Dakota State,Kansas,L,84-74
-Morehead State,Louisville,L,74-54
-Utah State,Marquette,L,58-57
-Robert Morris,Michigan State,L,77-62
-Tennessee,Oklahoma State,L,77-75
-Xavier,Portland State,W,77-59
-Kansas State,San Diego State,L,70-52
-Syracuse,Stephen F. Austin,W,59-44
+Team1,Team2,Score1,Score2
+Utah,Arizona,84,71
+Temple,Arizona St.,66,57
+Tulsa,Auburn,74,55
+USC,Boston College,55,72
+Wake Forest,Cleveland St.,84,69
+Missouri,Cornell,59,78
+West Virginia,Dayton,68,60
+Pitt,ETSU,62,72
+Miami (FL),Florida,74,60
+North Dakota St.,Kansas,84,74
+Morehead St.,Louisville,74,54
+Utah St.,Marquette,58,57
+Robert Morris,Michigan St.,77,62
+Tennessee,Oklahoma St.,77,75
+Xavier,Portland St.,59,77
+Kansas St.,San Diego St.,70,52
+Syracuse,Stephen F. Austin,44,59

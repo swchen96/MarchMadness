@@ -1,19 +1,19 @@
-Team,Opponent,Result,Score
-West Virginia,Arizona,W,75-65
-Southern Illinois,Arizona State,L,65-51
-Purdue,Baylor,W,90-79
-Duke,Belmont,W,71-70
-Texas A&M,BYU,W,67-62
-Wisconsin,Cal State Fullerton,W,71-56
-Stanford,Cornell,W,77-53
-Notre Dame,George Mason,W,68-50
-Xavier,Georgia,W,73-61
-Portland State,Kansas,L,85-61
-USC,Kansas State,L,80-67
-UNLV,Kent State,W,71-58
-Marquette,Kentucky,W,74-66
-Temple,Michigan State,L,72-61
-UCLA,Mississippi Valley State,W,70-29
-Pitt,Oral Roberts,W,82-63
-Maryland,Syracuse,L,88-72
-Winthrop,Washington State,L,71-40
+Team1,Team2,Score1,Score2
+West Virginia,Arizona,65,75
+Southern Illinois,Arizona St.,65,51
+Purdue,Baylor,79,90
+Duke,Belmont,70,71
+Texas A&M,BYU,62,67
+Wisconsin,Cal St. Fullerton,56,71
+Stanford,Cornell,53,77
+Notre Dame,George Mason,50,68
+Xavier,Georgia,61,73
+Portland St.,Kansas,85,61
+USC,Kansas St.,80,67
+UNLV,Kent St.,58,71
+Marquette,Kentucky,66,74
+Temple,Michigan St.,72,61
+UCLA,Mississippi Valley St.,29,70
+Pitt,Oral Roberts,63,82
+Maryland,Syracuse,88,72
+Winthrop,Washington St.,71,40

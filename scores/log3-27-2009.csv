@@ -1,5 +1,5 @@
-Team,Opponent,Result,Score
-Louisville,Arizona,W,103-64
-UNC,Gonzaga,W,98-77
-Michigan State,Kansas,W,67-62
-Syracuse,Oklahoma,L,84-71
+Team1,Team2,Score1,Score2
+Louisville,Arizona,64,103
+UNC,Gonzaga,77,98
+Michigan St.,Kansas,62,67
+Syracuse,Oklahoma,84,71

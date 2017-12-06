@@ -1,20 +1,20 @@
-Team,Opponent,Result,Score
-Washington,Alabama-Birmingham,L,102-100
-Utah,Boston College,L,58-51
-Pitt,UCF,W,53-44
-ETSU,Cincinnati,L,80-77
-Oklahoma State,Eastern Washington,W,75-56
-Kentucky,Florida A&M,W,96-76
-Austin Peay,George Mason,L,66-60
-Northern Iowa,Georgia Tech,L,65-60
-Murray State,Illinois,L,72-53
-Kansas,UIC,W,78-53
-North Carolina State,Louisiana-Lafayette,W,61-52
-Xavier,Louisville,W,80-70
-South Carolina,Memphis,L,59-43
-Monmouth,Mississippi State,L,85-52
-Niagara,Nebraska,L,78-70
-Providence,Pacific,L,66-58
-Wisconsin,Richmond,W,76-64
-Western Michigan,Vanderbilt,L,71-58
-Rhode Island,West Virginia,L,79-72
+Team1,Team2,Score1,Score2
+Washington,Alabama-Birmingham,102,100
+Utah,Boston College,58,51
+Pitt,UCF,44,53
+ETSU,Cincinnati,80,77
+Oklahoma St.,Eastern Washington,56,75
+Kentucky,Florida A&M,76,96
+Austin Peay,George Mason,66,60
+Northern Iowa,Georgia Tech,65,60
+Murray St.,Illinois,72,53
+Kansas,UIC,53,78
+North Carolina St.,Louisiana-Lafayette,52,61
+Xavier,Louisville,70,80
+South Carolina,Memphis,59,43
+Monmouth,Mississippi St.,85,52
+Niagara,Nebraska,78,70
+Providence,Pacific,66,58
+Wisconsin,Richmond,64,76
+Western Michigan,Vanderbilt,71,58
+Rhode Island,West Virginia,79,72

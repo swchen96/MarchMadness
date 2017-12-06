@@ -1,5 +1,5 @@
-Team,Opponent,Result,Score
-Georgia,Air Force,L,83-52
-Ole Miss,Clemson,L,89-68
-DePaul,Kansas State,W,70-65
-San Diego State,Syracuse,L,80-64
+Team1,Team2,Score1,Score2
+Georgia,Air Force,83,52
+Ole Miss,Clemson,89,68
+DePaul,Kansas St.,65,70
+San Diego St.,Syracuse,80,64

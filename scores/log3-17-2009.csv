@@ -1,13 +1,13 @@
-Team,Opponent,Result,Score
-Morehead State,Alabama State,W,58-43
-UNLV,Kentucky,L,70-60
-Rider,Liberty,L,79-64
-UTEP,Nevada,W,79-77
-Nebraska,New Mexico,L,83-71
-Rhode Island,Niagara,W,68-62
-Alabama-Birmingham,Notre Dame,L,70-64
-Kent State,Oakland,L,80-74
-Washington State,Saint Mary's (CA),L,68-57
-Weber State,San Diego State,L,65-49
-Davidson,South Carolina,W,70-63
-Northeastern,Wyoming,W,64-62
+Team1,Team2,Score1,Score2
+Morehead St.,Alabama St.,43,58
+UNLV,Kentucky,70,60
+Rider,Liberty,79,64
+UTEP,Nevada,77,79
+Nebraska,New Mexico,83,71
+Rhode Island,Niagara,62,68
+Alabama-Birmingham,Notre Dame,70,64
+Kent St.,Oakland,80,74
+Washington St.,Saint Mary's (CA),68,57
+Weber St.,San Diego St.,65,49
+Davidson,South Carolina,63,70
+Northeastern,Wyoming,62,64

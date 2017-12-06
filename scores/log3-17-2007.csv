@@ -1,7 +1,7 @@
-Team,Opponent,Result,Score
-Georgetown,Boston College,W,62-55
-Maryland,Butler,L,62-59
-UCLA,Indiana,W,54-49
-Texas A&M,Louisville,W,72-69
-UNC,Michigan State,W,81-67
-Bradley,Mississippi State,L,101-72
+Team1,Team2,Score1,Score2
+Georgetown,Boston College,55,62
+Maryland,Butler,62,59
+UCLA,Indiana,49,54
+Texas A&M,Louisville,69,72
+UNC,Michigan St.,67,81
+Bradley,Mississippi St.,101,72

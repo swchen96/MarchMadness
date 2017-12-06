@@ -1,5 +1,5 @@
-Team,Opponent,Result,Score
-Wisconsin,Davidson,L,73-56
-Villanova,Kansas,L,72-57
-Michigan State,Memphis,L,92-74
-Texas,Stanford,W,82-62
+Team1,Team2,Score1,Score2
+Wisconsin,Davidson,73,56
+Villanova,Kansas,72,57
+Michigan St.,Memphis,92,74
+Texas,Stanford,62,82

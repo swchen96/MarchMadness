@@ -1,8 +1,8 @@
-Team,Opponent,Result,Score
-Louisiana Tech,Clemson,L,69-53
-Old Dominion,Colorado,W,79-61
-BYU,Houston,L,77-67
-Oklahoma State,Miami (FL),L,62-59
-Wake Forest,Minnesota,L,73-58
-Vanderbilt,Notre Dame,L,79-69
-Western Kentucky,South Carolina,L,74-55
+Team1,Team2,Score1,Score2
+Louisiana Tech,Clemson,69,53
+Old Dominion,Colorado,61,79
+BYU,Houston,77,67
+Oklahoma St.,Miami (FL),62,59
+Wake Forest,Minnesota,73,58
+Vanderbilt,Notre Dame,79,69
+Western Kentucky,South Carolina,74,55

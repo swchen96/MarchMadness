@@ -1,9 +1,9 @@
-Team,Opponent,Result,Score
-Wisconsin,Bucknell,W,71-62
-North Carolina State,UConn,W,65-62
-Mississippi State,Duke,L,63-55
-Villanova,Florida,W,76-65
-Louisville,Georgia Tech,W,76-54
-UNC,Iowa State,W,92-65
-Vermont,Michigan State,L,72-61
-Southern Illinois,Oklahoma State,L,85-77
+Team1,Team2,Score1,Score2
+Wisconsin,Bucknell,62,71
+North Carolina St.,UConn,62,65
+Mississippi St.,Duke,63,55
+Villanova,Florida,65,76
+Louisville,Georgia Tech,54,76
+UNC,Iowa St.,65,92
+Vermont,Michigan St.,72,61
+Southern Illinois,Oklahoma St.,85,77

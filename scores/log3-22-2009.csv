@@ -1,9 +1,9 @@
-Team,Opponent,Result,Score
-Cleveland State,Arizona,L,71-57
-Syracuse,Arizona State,W,78-67
-Kansas,Dayton,W,60-43
-Siena,Louisville,L,79-72
-Missouri,Marquette,W,83-79
-USC,Michigan State,L,74-69
-Pitt,Oklahoma State,W,84-76
-Xavier,Wisconsin,W,60-49
+Team1,Team2,Score1,Score2
+Cleveland St.,Arizona,71,57
+Syracuse,Arizona St.,67,78
+Kansas,Dayton,43,60
+Siena,Louisville,79,72
+Missouri,Marquette,79,83
+USC,Michigan St.,74,69
+Pitt,Oklahoma St.,76,84
+Xavier,Wisconsin,49,60

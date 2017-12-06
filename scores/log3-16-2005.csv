@@ -1,12 +1,12 @@
-Team,Opponent,Result,Score
-Boston University,Georgetown,L,64-34
-Vanderbilt,Indiana,W,67-60
-Oral Roberts,Maryland,L,85-72
-Northeastern,Memphis,L,90-65
-Texas Christian,Miami (OH),W,60-58
-Rice,Missouri State,L,105-82
-Hofstra,St. Joseph's,L,53-44
-Denver,San Francisco,L,69-67
-Clemson,Texas A&M,L,82-74
-Davidson,VCU,W,77-62
-Houston,Wichita State,L,85-69
+Team1,Team2,Score1,Score2
+Boston University,Georgetown,64,34
+Vanderbilt,Indiana,60,67
+Oral Roberts,Maryland,85,72
+Northeastern,Memphis,90,65
+Texas Christian,Miami (OH),58,60
+Rice,Missouri St.,105,82
+Hofstra,St. Joseph's,53,44
+Denver,San Francisco,69,67
+Clemson,Texas A&M,82,74
+Davidson,VCU,62,77
+Houston,Wichita St.,85,69

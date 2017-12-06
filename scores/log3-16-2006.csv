@@ -1,19 +1,19 @@
-Team,Opponent,Result,Score
-Illinois,Air Force,W,78-69
-Marquette,Alabama,L,90-85
-UCLA,Belmont,W,78-44
-Akron,Creighton,L,71-60
-Southern,Duke,L,70-54
-South Alabama,Florida,L,76-50
-Xavier,Gonzaga,L,79-75
-Nebraska,Hofstra,L,73-62
-San Diego State,Indiana,L,87-83
-LSU,Iona,W,80-64
-UTEP,Michigan,L,82-67
-Oklahoma,Milwaukee,L,82-74
-Nevada,Montana,L,87-79
-Rutgers,St. Joseph's,L,71-62
-Wichita State,Seton Hall,W,86-66
-Texas A&M,Syracuse,W,66-58
-Winthrop,Tennessee,L,63-61
-Washington,Utah State,W,75-61
+Team1,Team2,Score1,Score2
+Illinois,Air Force,69,78
+Marquette,Alabama,90,85
+UCLA,Belmont,44,78
+Akron,Creighton,71,60
+Southern,Duke,70,54
+South Alabama,Florida,76,50
+Xavier,Gonzaga,79,75
+Nebraska,Hofstra,73,62
+San Diego St.,Indiana,87,83
+LSU,Iona,64,80
+UTEP,Michigan,82,67
+Oklahoma,Milwaukee,82,74
+Nevada,Montana,87,79
+Rutgers,St. Joseph's,71,62
+Wichita St.,Seton Hall,66,86
+Texas A&M,Syracuse,58,66
+Winthrop,Tennessee,63,61
+Washington,Utah St.,61,75

@@ -1,9 +1,9 @@
-Team,Opponent,Result,Score
-Villanova,Arizona,W,82-78
-Pitt,Bradley,L,72-66
-Memphis,Bucknell,W,72-56
-Kentucky,UConn,L,87-83
-UNC,George Mason,L,65-60
-Ohio State,Georgetown,L,70-52
-Texas,North Carolina State,W,75-54
-West Virginia,Northwestern State,W,67-54
+Team1,Team2,Score1,Score2
+Villanova,Arizona,78,82
+Pitt,Bradley,72,66
+Memphis,Bucknell,56,72
+Kentucky,UConn,87,83
+UNC,George Mason,65,60
+Ohio St.,Georgetown,70,52
+Texas,North Carolina St.,54,75
+West Virginia,Northwestern St.,54,67

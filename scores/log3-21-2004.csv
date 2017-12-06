@@ -1,9 +1,9 @@
-Team,Opponent,Result,Score
-Kentucky,Alabama-Birmingham,L,76-75
-Georgia Tech,Boston College,W,57-54
-Illinois,Cincinnati,W,92-68
-Pacific,Kansas,L,78-63
-Oklahoma State,Memphis,W,70-53
-Xavier,Mississippi State,W,89-74
-Vanderbilt,North Carolina State,W,75-73
-Wisconsin,Pitt,L,59-55
+Team1,Team2,Score1,Score2
+Kentucky,Alabama-Birmingham,76,75
+Georgia Tech,Boston College,54,57
+Illinois,Cincinnati,68,92
+Pacific,Kansas,78,63
+Oklahoma St.,Memphis,53,70
+Xavier,Mississippi St.,74,89
+Vanderbilt,North Carolina St.,73,75
+Wisconsin,Pitt,59,55

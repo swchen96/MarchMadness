@@ -1,16 +1,16 @@
-Team,Opponent,Result,Score
-Tennessee,American,W,72-57
-Indiana,Arkansas,L,86-72
-Texas,Austin Peay,W,74-54
-Louisville,Boise State,W,79-61
-South Alabama,Butler,L,81-61
-Villanova,Clemson,W,75-69
-Gonzaga,Davidson,L,82-76
-Creighton,Florida,L,82-54
-UMBC,Georgetown,L,66-47
-Texas-Arlington,Memphis,L,87-63
-Saint Mary's,Miami,L,78-64
-Oregon,Mississippi State,L,76-69
-UNC,Mount St. Mary's,W,113-74
-St. Joseph's,Oklahoma,L,72-64
-Vanderbilt,Siena,L,83-62
+Team1,Team2,Score1,Score2
+Tennessee,American,57,72
+Indiana,Arkansas,86,72
+Texas,Austin Peay,54,74
+Louisville,Boise St.,61,79
+South Alabama,Butler,81,61
+Villanova,Clemson,69,75
+Gonzaga,Davidson,82,76
+Creighton,Florida,82,54
+UMBC,Georgetown,66,47
+Texas-Arlington,Memphis,87,63
+Saint Mary's,Miami,78,64
+Oregon,Mississippi St.,76,69
+UNC,Mount St. Mary's,74,113
+St. Joseph's,Oklahoma,72,64
+Vanderbilt,Siena,83,62

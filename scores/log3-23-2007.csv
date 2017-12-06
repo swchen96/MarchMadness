@@ -1,5 +1,5 @@
-Team,Opponent,Result,Score
-Florida,Butler,W,65-57
-Vanderbilt,Georgetown,L,66-65
-Oregon,UNLV,W,76-72
-USC,UNC,L,74-64
+Team1,Team2,Score1,Score2
+Florida,Butler,57,65
+Vanderbilt,Georgetown,66,65
+Oregon,UNLV,72,76
+USC,UNC,74,64

@@ -1,10 +1,10 @@
-Team,Opponent,Result,Score
-Texas A&M,UConn,L,92-66
-Texas,Duke,L,74-69
-Western Kentucky,Gonzaga,L,83-81
-UNC,LSU,W,84-70
-Memphis,Maryland,W,89-70
-Oklahoma,Michigan,W,73-63
-Washington,Purdue,L,76-74
-Villanova,UCLA,W,89-69
-Baylor,Virginia Tech,W,84-66
+Team1,Team2,Score1,Score2
+Texas A&M,UConn,92,66
+Texas,Duke,74,69
+Western Kentucky,Gonzaga,83,81
+UNC,LSU,70,84
+Memphis,Maryland,70,89
+Oklahoma,Michigan,63,73
+Washington,Purdue,76,74
+Villanova,UCLA,69,89
+Baylor,Virginia Tech,66,84

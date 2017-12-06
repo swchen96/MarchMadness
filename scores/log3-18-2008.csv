@@ -1,13 +1,13 @@
-Team,Opponent,Result,Score
-Alabama State,Arizona State,L,64-53
-Mount St. Mary's,Coppin State,W,69-60
-Rhode Island,Creighton,L,74-73
-Stephen F. Austin,UMass,L,80-60
-Maryland,Minnesota,W,68-58
-Houston,Nevada,W,80-79
-Brown,Ohio,L,80-74
-North Carolina-Asheville,Ohio State,L,84-66
-Rider,Old Dominion,L,68-65
-Oklahoma State,Southern Illinois,L,69-53
-Robert Morris,Syracuse,L,87-81
-Richmond,Virginia,L,66-64
+Team1,Team2,Score1,Score2
+Alabama St.,Arizona St.,64,53
+Mount St. Mary's,Coppin St.,60,69
+Rhode Island,Creighton,74,73
+Stephen F. Austin,UMass,80,60
+Maryland,Minnesota,58,68
+Houston,Nevada,79,80
+Brown,Ohio,80,74
+North Carolina-Asheville,Ohio St.,84,66
+Rider,Old Dominion,68,65
+Oklahoma St.,Southern Illinois,69,53
+Robert Morris,Syracuse,87,81
+Richmond,Virginia,66,64

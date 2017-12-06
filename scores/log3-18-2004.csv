@@ -1,16 +1,16 @@
-Team,Opponent,Result,Score
-UNC,Air Force,W,63-52
-Southern Illinois,Alabama,L,65-64
-Duke,Alabama State,W,96-61
-Seton Hall,Arizona,W,80-76
-Syracuse,BYU,W,80-75
-Texas Tech,Charlotte,W,76-73
-Vermont,UConn,L,70-53
-Manhattan,Florida,W,75-60
-Valparaiso,Gonzaga,L,76-49
-St. Joseph's,Liberty,W,82-63
-UTEP,Maryland,L,86-83
-Nevada,Michigan State,W,72-66
-Texas,Princeton,W,66-49
-UTSA,Stanford,L,71-45
-Wake Forest,VCU,W,79-78
+Team1,Team2,Score1,Score2
+UNC,Air Force,52,63
+Southern Illinois,Alabama,65,64
+Duke,Alabama St.,61,96
+Seton Hall,Arizona,76,80
+Syracuse,BYU,75,80
+Texas Tech,Charlotte,73,76
+Vermont,UConn,70,53
+Manhattan,Florida,60,75
+Valparaiso,Gonzaga,76,49
+St. Joseph's,Liberty,63,82
+UTEP,Maryland,86,83
+Nevada,Michigan St.,66,72
+Texas,Princeton,49,66
+UTSA,Stanford,71,45
+Wake Forest,VCU,78,79

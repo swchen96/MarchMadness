@@ -1,11 +1,11 @@
-Team,Opponent,Result,Score
-Stanford,Alabama,L,70-67
-Milwaukee,Boise State,L,73-70
-DePaul,UConn,L,72-55
-Seton Hall,Duke,L,90-62
-Nevada,Gonzaga,W,91-72
-Wake Forest,Manhattan,W,84-80
-Syracuse,Maryland,W,72-70
-Texas,UNC,W,78-75
-Texas Tech,St. Joseph's,L,70-65
-Virginia,Villanova,L,73-63
+Team1,Team2,Score1,Score2
+Stanford,Alabama,70,67
+Milwaukee,Boise St.,73,70
+DePaul,UConn,72,55
+Seton Hall,Duke,90,62
+Nevada,Gonzaga,72,91
+Wake Forest,Manhattan,80,84
+Syracuse,Maryland,70,72
+Texas,UNC,75,78
+Texas Tech,St. Joseph's,70,65
+Virginia,Villanova,73,63
