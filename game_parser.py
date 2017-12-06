@@ -35,11 +35,11 @@ def get_scores(month, day, year):
 		away_name = away[0]
 		if away[0][-1] == ')' and away[0][-2].isdigit():
 			t = away[0].find('(')
-			away_name = away[0][:t]
+			away_name = away[0][:t-1]
 		home_name = home[0]
 		if home[0][-1] == ')' and home[0][-2].isdigit():
 			t = home[0].find('(')
-			home_name = home[0][:t]
+			home_name = home[0][:t-1]
 
 		next_entry.append(away_name.encode('utf-8'))
 		next_entry.append(home_name.encode('utf-8'))
@@ -66,6 +66,11 @@ tourney_dates['2011'] = [date(2011, 3, 15), date(2011, 4, 4)]
 tourney_dates['2010'] = [date(2010, 3, 16), date(2010, 4, 5)]
 tourney_dates['2009'] = [date(2009, 3, 17), date(2009, 4, 6)]
 tourney_dates['2008'] = [date(2008, 3, 18), date(2008, 4, 7)]
+tourney_dates['2007'] = [date(2007, 3, 13), date(2007, 4, 2)]
+tourney_dates['2006'] = [date(2006, 3, 14), date(2006, 4, 3)]
+tourney_dates['2005'] = [date(2005, 3, 15), date(2005, 4, 4)]
+tourney_dates['2004'] = [date(2004, 3, 16), date(2004, 4, 5)]
+
 
 for year in tourney_dates.keys():
 	d0 = tourney_dates[year][0]
