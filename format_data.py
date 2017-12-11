@@ -7,6 +7,7 @@ import pandas as pd
 import os
 import numpy as np
 import csv
+import random
 
 stats_we_want = [
   'Games',
@@ -94,15 +95,44 @@ for year in games:
       X.append(list(np.append(team_2_stats, team_1_stats)))
       y.append(team_2_score)
 
-with open('new_x.csv', 'w') as f:
+
+train_percent = .9
+new_order = random.sample(range(len(X)), len(X))
+train_X = []
+train_y = []
+test_X = []
+test_y = []
+
+
+i = 0
+while i < len(X):
+  if i < int(train_percent * len(X)):
+    train_X.append(X[new_order[i]])
+    train_y.append(y[new_order[i]])
+  else:
+    test_X.append(X[new_order[i]])
+    test_y.append(y[new_order[i]])
+  i += 1
+
+with open('train_x.csv', 'w') as f:
 	writer = csv.writer(f)
-	for row in X:
+	for row in train_X:
 		writer.writerow(row)
 
-with open('new_y.csv', 'w') as f:
+with open('train_y.csv', 'w') as f:
 	writer = csv.writer(f)
-	for row in y:
+	for row in train_y:
 		writer.writerow([row])
+
+with open('test_x.csv', 'w') as f:
+  writer = csv.writer(f)
+  for row in test_X:
+    writer.writerow(row)
+
+with open('test_y.csv', 'w') as f:
+  writer = csv.writer(f)
+  for row in test_y:
+    writer.writerow([row])
 
 
 '''
