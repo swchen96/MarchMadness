@@ -9,19 +9,20 @@ import numpy as np
 import csv
 
 stats_we_want = [
+  'Games',
 	# 'PTS',
 	'PPG',
 	# 'OPP PTS', 
 	'OPP PPG', 
-	'SCR MAR', 
+	# 'SCR MAR', 
 	'Win %', 
-	# 'FTA', #should we convert to per game?
+	'FTPG', 
 	'FT%', 
-	# 'FGA', #should we convert to per game?
+	'FGPG', 
 	'FG%',
-	# '3FGA', #should we convert to per game?
+	'3FGPG', 
 	'3FG%',
-	'Opp 3FG%',
+	# 'Opp 3FG%', # we dont have it for many years
 	# 'AST',
 	'APG',
 	# 'TO',
@@ -30,7 +31,7 @@ stats_we_want = [
 	'RPG',
 	# 'OPP REB',
 	'OPP RPG',
-	'REB MAR',
+	# 'REB MAR',
 	# 'DREB', #we don't have the data for most years
 	# 'ST',
 	'STPG',
@@ -64,14 +65,17 @@ def make_data_path(year):
 	return team_data_root + new
 
 remove_2016 = set(['Seattle', 'Old Dominion', 'Louisiana-Monroe', 'Central Michigan', 'Army', 'Grand Canyon'])
+remove_2012 = set(['North Dakota', 'Ohio St.', 'Middle Tennessee', 'Coastal Carolina', 'South Florida', 'University of California',
+                  'Lamar', 'Bowling Green St.', 'Quinnipiac', 'New Mexico St.', 'Alabama', 'Detroit'])
 X = []
 y = []
 for year in games:
+  print(year)
   df = pd.read_csv(make_data_path(year))
   for day in games[year]:
     for game_index in range(day.shape[0]):
       game = day.loc[game_index, :]
-      if (year == 2012) and ((game['Team1'] == 'North Dakota') or (game['Team2'] == 'North Dakota')):
+      if (year == 2012) and ((game['Team1'] in remove_2012) or (game['Team2'] in remove_2012)):
         continue
       if (year == 2016) and ((game['Team1'] in remove_2016) or (game['Team2'] in remove_2016)):
         continue
