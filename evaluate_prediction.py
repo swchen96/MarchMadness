@@ -19,7 +19,7 @@ winner = set(tournament['winner'].values)
 teams = [round32, round16, round8, round4, round2, winner]
 
 
-filename = "pls_brackets.txt"
+filename = "ridge_lasso_brackets_NEW.txt"
 predictions = open(filename).read().splitlines()
 # lines = lines.read()
 # lines = lines.splitlines()
@@ -78,7 +78,7 @@ print("prob_perfect: ", prob_perfect)
 print("brackets_needed: ", brackets_needed)
 
 fig, ax = plt.subplots()
-plt.title('Predicted Score Average: PLS')
+plt.title('Predicted Score Average: Randomly Selected Winners')
 plt.hist(scores, bins='auto')
 plt.xlabel('score')
 plt.ylabel('Number of brackets in the range')
