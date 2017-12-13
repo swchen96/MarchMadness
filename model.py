@@ -9,6 +9,7 @@ import matplotlib.pyplot as plt
 import networkx as nx
 from scipy.stats import norm
 import choose_winner
+from sklearn.cross_decomposition import PLSRegression
 
 
 TRAIN_PATH = "TRAIN_DATA.csv"
@@ -107,7 +108,15 @@ plt.ylabel('Score')
 plt.show()
 '''
 
-
+'''
+pls = PLSRegression(n_components=10)
+pls.fit(train_X, train_Y)
+pls_prediction = pls.predict(test_X)
+pls_R2 = pls.score(test_X, test_Y)
+pls_MSE = sklearn.metrics.mean_squared_error(test_Y, pls_prediction)
+print pls_R2
+print pls_MSE
+'''
 
 stats2016 = pd.read_csv("main_64_stats_16_17.csv")
 
@@ -124,8 +133,9 @@ def score_to_prob(diff):
 	return norm.cdf(diff/5)
 	#return 1 if diff > 0 else 0
 
-f = open('rl_brackets2.txt', 'w')
+f = open('ridge_lasso_brackets.txt', 'w')
 for i in range(1000):
+	print i
 	#tournament code
 	cur_round = []
 	output = []
@@ -142,9 +152,9 @@ for i in range(1000):
 			team2 = tournament.pop(0)
 			cur = get_game_row(team1, team2)
 			#print "outcome for "+team1+" vs "+team2
-			#pred = ridge_lasso.predict(cur[:, nonzero_cols])
+			pred = ridge_lasso.predict(cur[:, nonzero_cols])
 			#pred = lasso.predict(cur)
-			pred = elasticNet.predict(cur)
+			#pred = elasticNet.predict(cur)
 			###winner = team1 if pred[0] > pred[1] else team2
 			winnernum = choose_winner.pick_winner(pred[0], pred[1])
 			winner = team1 if winnernum == 1 else team2
@@ -152,10 +162,10 @@ for i in range(1000):
 			#print pred
 			if random.random() < score_to_prob(pred[0] - pred[1]):
 				cur_round.append(team1)
-				print team1
+				#print team1
 			else:
 				cur_round.append(team2)
-				print team2
+				#print team2
 			if cur_round[-1] != winner:
 				upsets = upsets + 1
 			tot = tot + 1
