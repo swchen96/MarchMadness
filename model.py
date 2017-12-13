@@ -137,7 +137,7 @@ def score_to_prob(diff):
 
 
 
-f = open('random_brackets.txt', 'w')
+f = open('pls_brackets_NEW.txt', 'w')
 for i in range(1000):
 	print i
 	#tournament code
@@ -159,11 +159,11 @@ for i in range(1000):
 			#pred = ridge_lasso.predict(cur[:, nonzero_cols])
 			#pred = lasso.predict(cur)
 			#pred = elasticNet.predict(cur)
-			#pred = [np.dot(pls, cur[0])+pls_int, np.dot(pls, cur[1])+pls_int]
+			pred = [np.dot(pls, cur[0])+pls_int, np.dot(pls, cur[1])+pls_int]
 			###winner = team1 if pred[0] > pred[1] else team2
-			#winnernum = choose_winner.pick_winner(pred[0], pred[1])
-			#winner = team1 if winnernum == 1 else team2
-			winner = team1 if random.random() < .5 else team2
+			winnernum = choose_winner.pick_winner(pred[0], pred[1])
+			winner = team1 if winnernum == 1 else team2
+			#winner = team1 if random.random() < .5 else team2
 			#print "winner: "+winner
 			#print pred
 			#if random.random() < score_to_prob(pred[0] - pred[1]):
@@ -176,7 +176,7 @@ for i in range(1000):
 			#	upsets = upsets + 1
 			#tot = tot + 1
 			cur_round.append(winner)
-			
+
 		tournament = list(cur_round)
 		output.append(list(tournament))
 
