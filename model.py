@@ -8,6 +8,7 @@ import sklearn
 import matplotlib.pyplot as plt
 import networkx as nx
 from scipy.stats import norm
+import choose_winner
 
 
 TRAIN_PATH = "TRAIN_DATA.csv"
@@ -123,7 +124,7 @@ def score_to_prob(diff):
 	return norm.cdf(diff/5)
 	#return 1 if diff > 0 else 0
 
-f = open('rl_brackets1.txt', 'w')
+f = open('rl_brackets2.txt', 'w')
 for i in range(1000):
 	#tournament code
 	cur_round = []
@@ -144,7 +145,9 @@ for i in range(1000):
 			#pred = ridge_lasso.predict(cur[:, nonzero_cols])
 			#pred = lasso.predict(cur)
 			pred = elasticNet.predict(cur)
-			winner = team1 if pred[0] > pred[1] else team2
+			###winner = team1 if pred[0] > pred[1] else team2
+			winnernum = choose_winner.pick_winner(pred[0], pred[1])
+			winner = team1 if winnernum == 1 else team2
 			#print "winner: "+winner
 			#print pred
 			if random.random() < score_to_prob(pred[0] - pred[1]):
