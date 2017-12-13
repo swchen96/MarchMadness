@@ -2,8 +2,9 @@ import pandas as pd
 import numpy as np
 import random
 from pprint import pprint as pprint
-from sklearn.linear_model import Ridge, Lasso, LinearRegression
+from sklearn.linear_model import Ridge, Lasso, LinearRegression, ElasticNet
 from sklearn.decomposition import PCA
+import sklearn
 import matplotlib.pyplot as plt
 import networkx as nx
 from scipy.stats import norm
@@ -26,6 +27,10 @@ lasso.fit(train_X, train_Y)
 lasso_coefs = lasso.coef_
 #print(lasso_coefs)
 
+elasticNet = ElasticNet(alpha = 1.0, l1_ratio = 0.4)
+elasticNet.fit(train_X, train_Y)
+
+
 #gets the nonzero coefficients from lasso
 non_zero_lasso = []
 nonzero_cols = []
@@ -33,22 +38,40 @@ for x in range(len(train_data.columns[:-1])):
     if lasso_coefs[x] != 0:
         non_zero_lasso.append(train_data.columns[x])
         nonzero_cols.append(x)
-#print(non_zero_lasso)
+print(non_zero_lasso)
 
 
 test_X = test_data.ix[:, test_data.columns != 'Score 1'].values
 #test_X = test_X[non_zero_lasso].values
 
-'''
+
 lasso_prediction = lasso.predict(test_X)
 lasso_R2 = lasso.score(test_X, test_Y)
-
+lasso_MSE = sklearn.metrics.mean_squared_error(test_Y, lasso_prediction)
+'''
 print("lasso coefficients: ", lasso_coefs)
 print("lasso score: ", lasso_R2)
+print("lasso mse: ", lasso_MSE)
 
 plt.title('LASSO Score Prediction')
 plt.plot(test_Y, color='orange')
 plt.plot(lasso_prediction, color='#1F62A7')
+plt.xlabel('Games')
+plt.ylabel('Score')
+plt.show()
+'''
+
+
+elasticNet_prediction = elasticNet.predict(test_X)
+elasticNet_R2 = elasticNet.score(test_X, test_Y)
+eNet_MSE = sklearn.metrics.mean_squared_error(test_Y, elasticNet_prediction)
+'''
+print("elasticNet score: ", elasticNet_R2)
+print("elasticNet MSE: ", eNet_MSE)
+
+plt.title('Elastic Net Score Prediction')
+plt.plot(test_Y, color='orange')
+plt.plot(elasticNet_prediction, color='#1F62A7')
 plt.xlabel('Games')
 plt.ylabel('Score')
 plt.show()
@@ -60,17 +83,20 @@ lasso_test_X = test_data.ix[:, nonzero_cols].values
 #runs ridge regression on the nonzero coefficients from lasso
 
 
-ridge_lasso = Ridge(alpha=4.0, copy_X=True, fit_intercept=True, max_iter=None,
+ridge_lasso = Ridge(alpha=0.4, copy_X=True, fit_intercept=True, max_iter=None,
       normalize=False, random_state=None, solver='auto', tol=0.001)
 ridge_lasso.fit(lasso_train_X,train_Y)
 
 ridge_prediction = ridge_lasso.predict(lasso_test_X)
 ridge_R2 = ridge_lasso.score(lasso_test_X, test_Y)
-
+ridge_MSE = sklearn.metrics.mean_squared_error(test_Y, ridge_prediction)
 '''
-print("ridge coefficients: ",ridge_lasso.coef_)
+
+#print("ridge coefficients: ",ridge_lasso.coef_)
 #print("prediction: ", ridge_prediction)
 print("ridge score: ", ridge_R2)
+print("ridge MSE: ", ridge_MSE)
+
 #
 plt.title('Ridge Regression Score Prediction')
 plt.plot(test_Y, color='orange')
@@ -95,36 +121,48 @@ def get_game_row(team1name, team2name):
 
 def score_to_prob(diff):
 	return norm.cdf(diff/5)
+	#return 1 if diff > 0 else 0
 
-#tournament code
-cur_round = []
-tournament = []
-for row in stats2016.values:
-	tournament.append(row[0])
-
-while len(tournament) > 1:
+f = open('brackets.txt', 'w')
+for i in range(100):
+	#tournament code
 	cur_round = []
-	for i in range(len(tournament)/2):
-		team1 = tournament.pop(0)
-		team2 = tournament.pop(0)
-		cur = get_game_row(team1, team2)
-		print "outcome for "+team1+" vs "+team2
-		pred = ridge_lasso.predict(cur[:, nonzero_cols])
-		#pred = lasso.predict(cur)
-		winner = team1 if pred[0] > pred[1] else team2
-		#print "winner: "+winner
-		#print pred
-		if random.random() < score_to_prob(pred[0] - pred[1]):
-			cur_round.append(team1)
-			print team1
-		else:
-			cur_round.append(team2)
-			print team2
+	output = []
+	tournament = []
+	upsets = 0
+	tot = 0
+	for row in stats2016.values:
+		tournament.append(row[0])
 
-	tournament = list(cur_round)
+	while len(tournament) > 1:
+		cur_round = []
+		for i in range(len(tournament)/2):
+			team1 = tournament.pop(0)
+			team2 = tournament.pop(0)
+			cur = get_game_row(team1, team2)
+			print "outcome for "+team1+" vs "+team2
+			#pred = ridge_lasso.predict(cur[:, nonzero_cols])
+			#pred = lasso.predict(cur)
+			pred = elasticNet.predict(cur)
+			winner = team1 if pred[0] > pred[1] else team2
+			#print "winner: "+winner
+			#print pred
+			if random.random() < score_to_prob(pred[0] - pred[1]):
+				cur_round.append(team1)
+				print team1
+			else:
+				cur_round.append(team2)
+				print team2
+			if cur_round[-1] != winner:
+				upsets = upsets + 1
+			tot = tot + 1
+		tournament = list(cur_round)
+		output.append(list(tournament))
 
 
-
+	f.write(str(output))
+	f.write('\n')
+	print "proportion of upsets ",float(upsets)/float(tot)
 
 #
 #
