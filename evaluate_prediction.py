@@ -4,6 +4,7 @@ from pprint import pprint as pprint
 import ast
 import matplotlib.pyplot as plt
 import matplotlib.patches as mpatches
+from scipy.stats import norm
 
 tournament = pd.read_csv('16-17_tournament.csv')
 #pprint(tournament)
@@ -18,7 +19,7 @@ winner = set(tournament['winner'].values)
 teams = [round32, round16, round8, round4, round2, winner]
 
 
-filename = "ridge_lasso_brackets.txt"
+filename = "pls_brackets.txt"
 predictions = open(filename).read().splitlines()
 # lines = lines.read()
 # lines = lines.splitlines()
@@ -67,8 +68,17 @@ print("best score: ", best_score)
 
 print("avg score: ", avg_score)
 
+mean = np.array(scores).mean()
+var = np.sqrt(np.array(scores).var())
+prob_perfect = norm.sf(1920, loc = mean, scale = var)
+brackets_needed = 1/prob_perfect
+
+print("std_dev: ", var)
+print("prob_perfect: ", prob_perfect)
+print("brackets_needed: ", brackets_needed)
+
 fig, ax = plt.subplots()
-plt.title('Predicted Score Average: LASSO and Ridge')
+plt.title('Predicted Score Average: PLS')
 plt.hist(scores, bins='auto')
 plt.xlabel('score')
 plt.ylabel('Number of brackets in the range')
