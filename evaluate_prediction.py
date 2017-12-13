@@ -18,7 +18,7 @@ winner = set(tournament['winner'].values)
 teams = [round32, round16, round8, round4, round2, winner]
 
 
-filename = "rl_brackets2.txt"
+filename = "ridge_lasso_brackets.txt"
 predictions = open(filename).read().splitlines()
 # lines = lines.read()
 # lines = lines.splitlines()
@@ -68,7 +68,7 @@ print("best score: ", best_score)
 print("avg score: ", avg_score)
 
 fig, ax = plt.subplots()
-plt.title('Predicted Score Average: Elastic Net')
+plt.title('Predicted Score Average: LASSO and Ridge')
 plt.hist(scores, bins='auto')
 plt.xlabel('score')
 plt.ylabel('Number of brackets in the range')
