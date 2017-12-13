@@ -99,6 +99,7 @@ ridge_MSE = sklearn.metrics.mean_squared_error(test_Y, ridge_prediction)
 print("ridge score: ", ridge_R2)
 print("ridge MSE: ", ridge_MSE)
 
+
 #
 plt.title('Ridge Regression Score Prediction')
 plt.plot(test_Y, color='orange')
@@ -107,7 +108,8 @@ plt.xlabel('Games')
 plt.ylabel('Score')
 plt.show()
 '''
-
+pls = np.array([.0815462511319254,0.416380749610633,0.0405139970315964,-0.00206388232686743,-0.112533522838847,0.0975532043816698,0.304663846570742,0.116057349546359,-0.0324394311810835,0.0554826960771491,0.199062134611474,-0.0831842493565624,0.225509033621224,0.0395098627376565,0.0178920861373612,-0.122004830157032,-0.0877685030983307,0.000114584296360235,0.666374597031175,-0.0621759785150505,0.00239984413408612,0.0336431872864840,-0.0232557850684514,0.00404303103150384,-0.0551426032705082,-0.00532146980672057,-0.0786717517586019,0.140708056742736,-0.155431940130113,0.242489412799500,-0.0399853156657436,0.181634927716436])
+pls_int = -46.1282225042891
 '''
 pls = PLSRegression(n_components=10)
 pls.fit(train_X, train_Y)
@@ -133,7 +135,9 @@ def score_to_prob(diff):
 	return norm.cdf(diff/5)
 	#return 1 if diff > 0 else 0
 
-f = open('ridge_lasso_brackets.txt', 'w')
+
+
+f = open('pls_brackets.txt', 'w')
 for i in range(1000):
 	print i
 	#tournament code
@@ -152,9 +156,10 @@ for i in range(1000):
 			team2 = tournament.pop(0)
 			cur = get_game_row(team1, team2)
 			#print "outcome for "+team1+" vs "+team2
-			pred = ridge_lasso.predict(cur[:, nonzero_cols])
+			#pred = ridge_lasso.predict(cur[:, nonzero_cols])
 			#pred = lasso.predict(cur)
 			#pred = elasticNet.predict(cur)
+			pred = [np.dot(pls, cur[0])+pls_int, np.dot(pls, cur[1])+pls_int]
 			###winner = team1 if pred[0] > pred[1] else team2
 			winnernum = choose_winner.pick_winner(pred[0], pred[1])
 			winner = team1 if winnernum == 1 else team2
