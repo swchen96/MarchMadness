@@ -123,8 +123,8 @@ def score_to_prob(diff):
 	return norm.cdf(diff/5)
 	#return 1 if diff > 0 else 0
 
-f = open('brackets.txt', 'w')
-for i in range(100):
+f = open('rl_brackets1.txt', 'w')
+for i in range(1000):
 	#tournament code
 	cur_round = []
 	output = []
@@ -140,7 +140,7 @@ for i in range(100):
 			team1 = tournament.pop(0)
 			team2 = tournament.pop(0)
 			cur = get_game_row(team1, team2)
-			print "outcome for "+team1+" vs "+team2
+			#print "outcome for "+team1+" vs "+team2
 			#pred = ridge_lasso.predict(cur[:, nonzero_cols])
 			#pred = lasso.predict(cur)
 			pred = elasticNet.predict(cur)
@@ -162,7 +162,7 @@ for i in range(100):
 
 	f.write(str(output))
 	f.write('\n')
-	print "proportion of upsets ",float(upsets)/float(tot)
+	#print "proportion of upsets ",float(upsets)/float(tot)
 
 #
 #
